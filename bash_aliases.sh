@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export __LS_OPTIONS='--color=auto -h'
+export __LS_OPTIONS='-G -h'
 
 alias ls='ls $__LS_OPTIONS'
 alias ll='ls $__LS_OPTIONS -l'
@@ -17,7 +17,9 @@ alias bc='bc -l'
 
 alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
-alias rm='rm -Iv --one-file-system --preserve-root'
+#alias rm='rm -Iv --one-file-system --preserve-root'
+
+alias g='git'
 
 # function checks if the application is installed
 function __add_command_replace_alias() {

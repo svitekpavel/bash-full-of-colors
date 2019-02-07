@@ -133,7 +133,7 @@ function __getMachineId() {
     if [ -f /etc/machine-id ]; then
         echo $((0x$(cat /etc/machine-id | head -c 15)))
     else
-        echo $(( (${#HOSTNAME}+0x$(hostid))))
+        echo $(( (${#HOSTNAME}+0x${hostid})))
     fi
 }
 
@@ -199,9 +199,9 @@ function __makePS1() {
             local untracked="$( echo "${git_status}" | grep -F '?? ' | sed -e 's/^\?\(\?\)\s.*$/\1/' )"
             local status_line="$( echo -e "${letters}\n${untracked}" | sort | uniq | tr -d '[:space:]' )"
             PS1+=" \[${BBlue}\](${branch}"
-            if [ -n "${status_line}" ]; then
-                PS1+=" ${status_line}"
-            fi
+            #if [ -n "${status_line}" ]; then
+            #    PS1+=" ${status_line}"
+            #fi
             PS1+=")\[${Color_Off}\]"
         fi
     fi
