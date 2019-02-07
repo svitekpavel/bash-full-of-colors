@@ -9,6 +9,7 @@ Features:
 * *hostname* color is based on host unique identifier to simplify server identification by the user when working with multiple open SSH sessions
 * shows checked-out branch name when current directory is within Git repository
 * shows last command return code if it differs from 0
+* shows Python virtualenv
 
 
 ## Installation
@@ -51,6 +52,7 @@ aptitude install most multitail pydf mtr htop
 
 If you don't have them installed, script falls back to the original command.
 
+You can also create your own local aliases. Create the file `~/.bash_local` file and place them there.
 
 ## Credits
 
