@@ -1,4 +1,4 @@
-# Bash *full of colors*
+# Bash *full of colors* for Macbook [Pro] / Mac users 2019
 
 Powerful `.bashrc` and `.bash_profile` coming together with colorful output. It adds additional information
 to your command prompt and many useful aliases.
