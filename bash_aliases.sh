@@ -16,6 +16,7 @@ alias bc='bc -l'
 
 alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
+alias d='docker'
 alias g='git'
 alias svim='sudo vim'
 
