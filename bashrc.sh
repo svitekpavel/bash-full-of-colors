@@ -196,7 +196,7 @@ function __makePS1() {
 
     # git branch
     if [ -x "`which git 2>&1`" ]; then
-        local branch="$(git name-rev --name-only HEAD 2>/dev/null)"
+        local branch="$(git branch 2>/dev/null |grep "^*" |awk '{ print $2 }')"
 
         if [ -n "${branch}" ]; then
             local git_status="$(git status --porcelain -b 2>/dev/null)"
