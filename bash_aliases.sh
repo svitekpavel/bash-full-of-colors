@@ -19,6 +19,7 @@ alias mv='mv -iv'
 alias d='docker'
 alias g='git'
 alias svim='sudo vim'
+alias youtube-dl-mp3='youtube-dl -x --audio-format mp3'
 
 # function checks if the application is installed
 function __add_command_replace_alias() {
